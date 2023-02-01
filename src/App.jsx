@@ -1,13 +1,14 @@
-/* COMPONENTES FUNCIONALES */
-import Componente1 from "./components/Componente1";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return(
     <div>
-      <Componente1 />
+      <NavBar/>
+      <ItemListContainer greeting= "Todo para tu mascota en un solo lugar"/>
     </div>
   );
 };
 
-export default App;
+export default App
 
