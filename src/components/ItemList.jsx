@@ -7,12 +7,13 @@ const ItemList = () => {
   
 
 
-
-
     fetchingData();
 
     return (
+        <div>
+            <div>{productLits}</div>
     <div><Item /></div>
+    </div>
   )
 }
 

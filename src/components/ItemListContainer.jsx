@@ -5,7 +5,9 @@ import { useEffect, useState } from 'react';
 
 const ItemListContainer = ({ greeting }) => {
 
-  const [productList, setProductList] = ([useState]);
+  const [productList, setProductList] = useState([]);
+  setProductList(datosFetched);
+  console.log(productList);
   const productos = [
     {
       id: 1,
@@ -71,7 +73,7 @@ const ItemListContainer = ({ greeting }) => {
         <h2>{greeting}</h2>
       </div>
       <div><ItemCount stock={5} /></div>
-      <div><ItemList /></div>
+      <div><ItemList productList={productList}/></div>
     </div>
   )
 }
