@@ -1,8 +1,3 @@
-
-/*FUNCION FLECHA QUE RETORNA DETERMINADO CONTENIDO*/
-
-/*EN LO SIGUIENTE ESTOY CREANDO UN COMPONENTE CON EL ATAJO RAFCE*/
-
 import React from 'react';
 import CartWidget from "./CartWidget";
 
