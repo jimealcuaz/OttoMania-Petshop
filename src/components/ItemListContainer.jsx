@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 const ItemListContainer = ({ greeting }) => {
 
   const [productList, setProductList] = useState([]);
-  setProductList(datosFetched);
   console.log(productList);
   const productos = [
     {
@@ -67,13 +66,15 @@ const ItemListContainer = ({ greeting }) => {
     }
   }
 
+  fetchingData()
+
   return (
     <div>
       <div>
         <h2>{greeting}</h2>
       </div>
       <div><ItemCount stock={5} /></div>
-      <div><ItemList productList={productList}/></div>
+      <div><ItemList productList={productList} /></div>
     </div>
   )
 }
