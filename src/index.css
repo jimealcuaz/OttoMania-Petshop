@@ -6,3 +6,30 @@
 .d-flex{
     align-items: center;
 }
+
+.card{
+    width: 18rem;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.df-itemlist{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.greeting{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+

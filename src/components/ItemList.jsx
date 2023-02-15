@@ -8,9 +8,9 @@ const ItemList = ({ productList }) => {
     return (
 
         <div>
-            <div>
+            <div className="df-itemlist">
                 {productList.map((item) => (
-                    <Item key={item.nombre} 
+                    <Item key={item.id} 
                     item={item} />
                 ))}
             </div>
