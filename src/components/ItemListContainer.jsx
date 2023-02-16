@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ greeting }) => {
 
-  const {categoria} = useParams();
-  console.log(categoria)
+  const { categoria } = useParams();
+  console.log(categoria);
 
   const [productList, setProductList] = useState([]);
   console.log(productList);
@@ -73,31 +73,26 @@ const ItemListContainer = ({ greeting }) => {
     });
   };
 
-  async function fetchingData() {
-    try {
-      const datosFetched = await getProductos();
-      setProductList(datosFetched);
-    } catch (err) {
-      console.log(err);
-    }
-  }
-
-  fetchingData()
-
-  const catFilter = productos.filter((productos)=>productos.categoria === categoria);
-
   useEffect(() => {
-    getProductos().then((productList) => setProductList(productList));
-  }, []);
+    getProductos().then((res) => {
+      if(categoria){
+        setProductList(res.filter((productos)=>productos.categoria === categoria))
+      }else{
+        setProductList(res)
+      }
+    });
+  }, [categoria]);
+
 
   return (
     <div>
       <div className="greeting">
-        <h2 className="animate__animated animate__backInDown">{greeting}</h2>
+        <h2 className="animate_animated animate_backInDown">{greeting}</h2>
       </div>
-      {categoria ? <ItemList productos={catFilter} /> : <ItemList productos={productos} />}
+      {  <ItemList productList={productList} />}
     </div>
   )
 }
+
 
 export default ItemListContainer
