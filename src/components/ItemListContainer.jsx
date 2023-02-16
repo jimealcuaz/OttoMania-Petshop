@@ -1,9 +1,13 @@
 import React from 'react';
 import ItemCount from "./ItemCount";
 import ItemList from './ItemList';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, } from 'react';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ greeting }) => {
+
+  const {categoria} = useParams();
+  console.log(categoria)
 
   const [productList, setProductList] = useState([]);
   console.log(productList);
@@ -65,7 +69,7 @@ const ItemListContainer = ({ greeting }) => {
       }
       setTimeout(() => {
         resolve(productos);
-      }, 2000);
+      }, 1000);
     });
   };
 
@@ -80,6 +84,8 @@ const ItemListContainer = ({ greeting }) => {
 
   fetchingData()
 
+  const catFilter = productos.filter((productos)=>productos.categoria === categoria);
+
   useEffect(() => {
     getProductos().then((productList) => setProductList(productList));
   }, []);
@@ -87,9 +93,9 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <div className="greeting">
-        <h2>{greeting}</h2>
+        <h2 className="animate__animated animate__backInDown">{greeting}</h2>
       </div>
-      <div><ItemList productList={productList} /></div>
+      {categoria ? <ItemList productos={catFilter} /> : <ItemList productos={productos} />}
     </div>
   )
 }
