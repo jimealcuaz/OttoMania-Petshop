@@ -24,8 +24,8 @@ const NavBar = () => {
                                     Productos
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" to="/categoria/perros"href="#">Perros</a></li>
-                                    <li><a className="dropdown-item" to="/categoria/gatos"href="#">Gatos</a></li>
+                                    <li><Link className="dropdown-item" to="/categoria/perros">Perros</Link></li>
+                                    <li><Link className="dropdown-item"to="/categoria/gatos">Gatos</Link></li>
                                 </ul>
                             </li>
                         </ul>
