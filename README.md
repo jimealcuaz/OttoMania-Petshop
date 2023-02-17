@@ -9,7 +9,7 @@ En este caso, desarrollamos una aplicación consistente en una tienda virtual de
 * Agregar o eliminar productos a su carrito de compras.
 * Concretar la compra de la totalidad de productos que haya seleccionado.
 
----![OttoMania _ Petshop](https://user-images.githubusercontent.com/113145805/219655775-e788c24e-f77c-43cb-9f16-4d6b69ec9bac.gif)
+
 
 
 ### **Tencologías utilizadas:**
