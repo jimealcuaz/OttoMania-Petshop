@@ -12,6 +12,7 @@ En este caso, desarrollamos una aplicación consistente en una tienda virtual de
 **Así es como funciona:**
 
 
+![OttoMania _ Petshop](https://user-images.githubusercontent.com/113145805/219657587-63c30d83-6a05-421d-934c-a6b41a78f5f0.gif)
 
 
 ### **Tencologías utilizadas:**
