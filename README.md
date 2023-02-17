@@ -5,7 +5,7 @@
 En este caso, desarrollamos una aplicación consistente en una tienda virtual de compra de productos para perros y gatos, donde el usuario podrá realizar las siguientes acciones:
 
 * Visualizar la totalidad de productos, su detalle, precio y stock.
-* Filtrar productos por categorías (_perros o gatos_).
+* Filtrar productos por categorías _(perros o gatos)_.
 * Agregar o eliminar productos a su carrito de compras.
 * Concretar la compra de la totalidad de productos que haya seleccionado.
 
