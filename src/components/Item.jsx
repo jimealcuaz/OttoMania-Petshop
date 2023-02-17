@@ -11,8 +11,8 @@ const Item = ({ item }) => {
                         <h5 className="card-title">{item.nombre}</h5>
                         <p className="card-text">${item.precio}</p>
                         <p className="card-text">Stock: {item.stock}</p>
-                        <Link to="/item/:id">
-                        <a href="#" className="btn btn-outline-secondary">Ver detalle</a>
+                        <Link className="btn btn-outline-secondary" to={`/item/${item.id}`}>
+                       Ver detalle
                         </Link>
                     </div>
                 </div>
