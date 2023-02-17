@@ -9,6 +9,8 @@ En este caso, desarrollamos una aplicación consistente en una tienda virtual de
 * Agregar o eliminar productos a su carrito de compras.
 * Concretar la compra de la totalidad de productos que haya seleccionado.
 
+**Así es como funciona:**
+
 ---
 
 ### **Tencologías utilizadas:**
