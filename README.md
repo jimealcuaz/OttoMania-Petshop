@@ -11,7 +11,8 @@ En este caso, desarrollamos una aplicación consistente en una tienda virtual de
 
 **Así es como funciona:**
 
----
+
+
 
 ### **Tencologías utilizadas:**
 * HTML
