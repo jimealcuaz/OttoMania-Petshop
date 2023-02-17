@@ -33,3 +33,53 @@
     justify-content: center;
 }
 
+
+.df-footer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.location{
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+}
+
+.bi-geo-alt{
+color: red;
+width: 1.5rem;
+height: 1.5rem;
+}
+
+.bi-instagram{
+    color: brown;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bi-facebook{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bi-twitter{
+    color: lightskyblue;
+    width: 1.5rem;
+    height: 1.5rem;
+}

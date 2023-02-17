@@ -16,7 +16,7 @@ const ItemDetail = ({ productDetail }) => {
                         <li className="list-group-item">A third item</li>
                     </ul>
                     <div className="card-body">
-                    <div><ItemCount stock={5} /></div>
+                    <div><ItemCount /></div>
                     </div>
             </div>
         </div>

@@ -87,7 +87,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <div className="greeting">
-        <h2 className="animate_animated animate_backInDown">{greeting}</h2>
+        <h2 className="animate__animated animate__backInDown">{greeting}</h2>
       </div>
       {  <ItemList productList={productList} />}
     </div>
