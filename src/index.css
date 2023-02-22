@@ -83,3 +83,12 @@ height: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
 }
+
+.df-itemdetail{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-success{
+    margin: 5px;
+}
