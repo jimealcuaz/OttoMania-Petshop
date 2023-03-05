@@ -1,4 +1,5 @@
 import React from 'react'
+import CartContext from '../context/CartContext'
 import ItemCount from './ItemCount'
 
 const ItemDetail = ({ productDetail}) => {
@@ -15,7 +16,7 @@ const ItemDetail = ({ productDetail}) => {
                         <li className="list-group-item">Stock: {productDetail.stock}</li>
                     </ul>
                     <div className="card-body">
-                    <div><ItemCount /></div>
+                    <div><CartContext><ItemCount /></CartContext></div>
                     </div>
             </div>
         </div>

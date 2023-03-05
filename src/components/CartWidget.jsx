@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+
 
 const CartWidget = () => {
+
+
     return (
         <div><button type="button" className="btn btn-light">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-cart4" viewBox="0 0 16 16">

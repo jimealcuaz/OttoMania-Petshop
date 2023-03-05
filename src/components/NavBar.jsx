@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CartContext from '../context/CartContext';
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
@@ -33,6 +34,7 @@ const NavBar = () => {
                 </div>
                 <div>
                     <CartWidget />
+                    
                 </div>
             </nav>
 
