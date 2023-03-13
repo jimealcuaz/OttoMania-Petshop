@@ -15,10 +15,7 @@ const ItemCount = () => {
                 <button type="button" className="btn btn-light">{counter}</button>
                 <button type="button" className="btn btn-secondary" onClick={()=>increment()}>+</button>
             </div>
-            <div className="btn-group d-flex flex-column" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-success">Agregar al carrito</button>
-                <button type="button" className="btn btn-success" onClick={()=>reset()}>Vaciar carrito</button>
-            </div>
+        
         </div>
     )
 }
