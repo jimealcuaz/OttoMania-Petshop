@@ -1,8 +1,16 @@
-import React from 'react'
-import CartContext from '../context/CartContext'
-import ItemCount from './ItemCount'
+import React, {useState, useContext} from 'react';
+import CartContext from '../context/CartContext';
+import ItemCount from './ItemCount';
+
+const useCartContext = () => useContext (CartContext);
 
 const ItemDetail = ({ productDetail }) => {
+
+    const {addProduct} = useCartContext();
+
+    const onAdd = (quantity) => {
+        addProduct(data,quantity);
+    }
     return (
         <div className="df-itemdetail">
             <div className="card">

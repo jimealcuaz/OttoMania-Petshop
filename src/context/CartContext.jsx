@@ -4,22 +4,24 @@ import { CounterContext } from './counterContext';
 
 const CartContext = ({children}) => {
 
-    const [counter, setCounter]=useState(0);
-
-    const increment = () =>{
-        setCounter(counter+1);
+    const [cart, setCart]=useState([]);
+   
+   
+    const addProduct = (item, newQuantity) => {
+        const newCart = cart.filter(prod => prod.id !== item.id);
+        newCart.push({...item, quantity:newQuantity});
+        setCart(newCart);
     }
 
-    const decrement = () =>{
-        setCounter(counter-1);
-    }
+    const clearCart=() => setCart([]);
 
-    const reset = () =>{
-        setCounter(0);
-    }
+    const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
+
+    const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
+
 
   return (
-    <CounterContext.Provider value={{counter, increment, decrement, reset}}>
+    <CounterContext.Provider value={{clearCart, isInCart, removeProduct, addProduct}}>
         {children}
     </CounterContext.Provider>
   )
